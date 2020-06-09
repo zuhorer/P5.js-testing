@@ -16,17 +16,9 @@ function function2(timeString){
 }*/
 
 function setup() {
-	createCanvas(600,420);
-	bernard= createCapture(VIDEO);
-	bernard.hide();
+
+
+
 	socket.on('connect', function1);
 	//bernard= createCapture('images/st-bernard-dog-alps.jpg',imageReady);
 	socket.on('time', function2);}
-
-
-
-
-function draw(){
-	image(bernard,0,0);
-	
-}
